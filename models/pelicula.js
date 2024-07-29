@@ -20,12 +20,7 @@ const peliculaSchema = new Schema({
     type: String, required: true 
   },
   horarios: [{
-    idHorario: {
-      type: mongoose.Schema.Types.ObjectId,
-      default: () => new mongoose.Types.ObjectId(), // Generar un ObjectId único para cada horario
-      required: true,
-      unique: true
-    },
+    _id: true,
     fecha: {
       type: Date,
       required: [true, 'La fecha es obligatoria']

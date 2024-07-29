@@ -1,10 +1,10 @@
 import { Schema, model } from 'mongoose';
 
 const boletoSchema = new Schema({
-  funcion: {
-    type: Schema.Types.ObjectId,
-    ref: 'Pelicula', // Referencia al horario de la película
-    required: [true, 'La función es obligatoria']
+  horario: {
+    type: mongoose.Schema.Types.ObjectId, // Referenciamos directamente el _id del horario
+    ref: 'Pelicula.horarios._id', // Referencia al _id dentro del array horarios de Pelicula
+    required: true
   },
   pelicula: {
     type: Schema.Types.ObjectId,
