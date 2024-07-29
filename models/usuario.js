@@ -6,6 +6,12 @@ const usuarioSchema = new Schema({
     required: [true, 'El nombre es obligatorio'],
     trim: true
   },
+  nickname: {
+    type: String,
+    required: [true, 'El nickname es obligatorio'],
+    unique: true,
+    trim: true
+  },
   email: {
     type: String,
     required: [true, 'El correo electrónico es obligatorio'],
@@ -26,7 +32,8 @@ const usuarioSchema = new Schema({
   tipo: {
     type: String,
     required: true,
-    enum: ['administrador', 'estandar', 'vip']
+    enum: ['administrador', 'estandar', 'vip'],
+    default: 'estandar'
   },
   vipCard: {
     type: String,

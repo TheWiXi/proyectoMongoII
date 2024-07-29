@@ -11,11 +11,6 @@ const boletoSchema = new Schema({
     ref: 'Pelicula',
     required: [true, 'La película es obligatoria']
   },
-  sala: {
-    type: Schema.Types.ObjectId,
-    ref: 'Sala',
-    required: [true, 'La sala es obligatoria']
-  },
   asiento: {
     type: String,
     required: [true, 'El asiento es obligatorio']

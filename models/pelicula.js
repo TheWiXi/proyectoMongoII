@@ -7,15 +7,25 @@ const peliculaSchema = new Schema({
     trim: true
   },
   genero: [{
-    type: String,
-    enum: ['Acción', 'Aventura', 'Comedia', 'Drama', 'Ciencia Ficción', 'Terror', 'Animación', 'Documental', 'Otro']
+    type: [String],
+    enum: ['Acción', 'Aventura', 'Comedia', 'Drama', 'Ciencia Ficción', 'Terror', 'Animación', 'Documental', 'Otro'],
+    default: 'sin genero'
   }],
   duracion: {
     type: Number,
     required: [true, 'La duración es obligatoria'],
-    min: [0, 'La duración debe ser un número positivo']
+    min: [1, 'La duración debe ser un número positivo']
+  },
+  sinopsis: { 
+    type: String, required: true 
   },
   horarios: [{
+    idHorario: {
+      type: mongoose.Schema.Types.ObjectId,
+      default: () => new mongoose.Types.ObjectId(), // Generar un ObjectId único para cada horario
+      required: true,
+      unique: true
+    },
     fecha: {
       type: Date,
       required: [true, 'La fecha es obligatoria']
@@ -38,7 +48,7 @@ const peliculaSchema = new Schema({
     },
     estado: {
       type: String,
-      enum: ['disponible', 'ocupado'],
+      enum: ['disponible', 'ocupado', 'reservado'],
       default: 'disponible'
     }
   }]
