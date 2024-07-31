@@ -10,7 +10,7 @@ await viewpelis.apiUno();
 
 Respuesta:
 
-![image-20240731111834424](/home/wixi/.config/Typora/typora-user-images/image-20240731111834424.png)
+![image-20240731111834424](https://github.com/TheWiXi/proyectoMongoII/tree/main/docs/1.png)
 
 2.**API para Obtener Detalles de Película:** Permitir la consulta de información detallada sobre una película específica, incluyendo sinopsis.
 
@@ -21,7 +21,7 @@ await viewpelis.apiDos(idPelicula);
 ``````
 
 Respuesta:
-![image-20240731112739072](/home/wixi/.config/Typora/typora-user-images/image-20240731112739072.png)
+![image-20240731112739072](https://github.com/TheWiXi/proyectoMongoII/tree/main/docs/2.png)
 
 3**API para Verificar Disponibilidad de Asientos:** Permitir la consulta de la disponibilidad de asientos en una sala para una proyección específica.
 
@@ -32,7 +32,7 @@ const showFuncioness = await funciones.apiUno();S
 
 Respuesta:
 
-![image-20240731120917667](/home/wixi/.config/Typora/typora-user-images/image-20240731120917667.png)
+![image-20240731120917667](https://github.com/TheWiXi/proyectoMongoII/tree/main/docs/3.png)
 
 ``````js
 const idFuncion = "66a807cca5aad36c22a20ca3";
@@ -43,7 +43,7 @@ const showFunciones = await funciones.apiDos(idFuncion);
 
 Respuesta:
 
-![image-20240731121050767](/home/wixi/.config/Typora/typora-user-images/image-20240731121050767.png)
+![image-20240731121050767](https://github.com/TheWiXi/proyectoMongoII/tree/main/docs/4.png)
 
 4.**API para Comprar Boletos:** Permitir la compra de boletos para una película específica, incluyendo la selección de la fecha y la hora de la proyección.
 
@@ -62,4 +62,4 @@ const newboleto = boletos.apiUno(newTicket);
 ``````
 
 Respuesta:
-![image-20240731122905583](/home/wixi/.config/Typora/typora-user-images/image-20240731122905583.png)
+![image-20240731122905583](https://github.com/TheWiXi/proyectoMongoII/tree/main/docs/5.png)
