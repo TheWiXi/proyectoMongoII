@@ -22,6 +22,7 @@ export class peliculaController {
                 { projection: { "titulo": 1, "genero": 1, "duracion": 1,  "_id": 0 } }); // * Get the cursor
             const result = await cursor.toArray(); // * Convert the cursor to an array
             console.table(result); // * Print the results
+            await this.connection.close(); // * Close the connection
             return result; // * Return the results
         } 
         catch (error) {
@@ -40,6 +41,7 @@ export class peliculaController {
                 { "_id": new ObjectId(idPelicula) }
             ); // * Get the cursor
             console.log(cursor); // * Print the results
+            await this.connection.close(); // * Close the connection
             return cursor; // * Return the results
         } 
         catch (error) {
