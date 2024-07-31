@@ -1,4 +1,8 @@
-import {connect} from "./config/connect.js"
-import { UserManagement } from './services/dbUserAndRole.js';
+import { peliculaController } from "./controllers/peliculasController.js";
+import {connect} from "./config/connect.js";
 
-const dbConnection = new connect();
+const viewpelis = new peliculaController();
+
+await viewpelis.apiUno();
+
+// console.table(viewpelis);  
