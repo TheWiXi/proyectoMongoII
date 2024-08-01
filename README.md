@@ -132,4 +132,13 @@ const rol = "vip";
 
 const showUsers = new usuarioController().apiTres(rol);
 ```
-
+Connection
+```js
+MONGO_USER=
+MONGO_PASS=
+MONGO_HOST=
+MONGO_CLUSTER=
+MONGO_PORT=
+MONGO_DBNAME=
+mongodb://wixi:wixi.1234!@serveo.net:27017/Cine
+```
