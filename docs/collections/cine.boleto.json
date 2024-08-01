@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "66aa25199263276fbd8bfbcd"
+  },
+  "id_funcion": {
+    "$oid": "66a807cca5aad36c22a20ca3"
+  },
+  "asiento": "A1",
+  "fechaCompra": {
+    "$date": "2024-07-31T11:50:46.715Z"
+  },
+  "id_sala": {
+    "$oid": "66a8058ca5aad36c22a20c9e"
+  },
+  "subTotal": 14000,
+  "Total": 27580,
+  "cedula_user": 1234
+}]

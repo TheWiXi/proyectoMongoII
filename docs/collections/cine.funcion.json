@@ -1,0 +1,287 @@
+[{
+  "_id": {
+    "$oid": "66a807cca5aad36c22a20ca3"
+  },
+  "id_pelicula": {
+    "$oid": "66a80379a5aad36c22a20c80"
+  },
+  "id_sala": {
+    "$oid": "66a8058ca5aad36c22a20c9e"
+  },
+  "fecha_init": {
+    "$date": "2024-08-01T19:30:00.000Z"
+  },
+  "fecha_end": {
+    "$date": "2024-08-01T21:45:00.000Z"
+  },
+  "asientos": [
+    {
+      "codigo": "A1",
+      "estado": "disponible"
+    },
+    {
+      "codigo": "A2",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "A3",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "B1",
+      "estado": "disponible"
+    },
+    {
+      "codigo": "B2",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "B3",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "C1",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "C2",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "C3",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "D1",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "D2",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "D3",
+      "estado": "comprada"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a807cca5aad36c22a20ca4"
+  },
+  "id_pelicula": {
+    "$oid": "66a80379a5aad36c22a20c85"
+  },
+  "id_sala": {
+    "$oid": "66a8058ca5aad36c22a20ca1"
+  },
+  "fecha_init": {
+    "$date": "2024-08-02T14:00:00.000Z"
+  },
+  "fecha_end": {
+    "$date": "2024-08-02T16:15:00.000Z"
+  },
+  "asientos": [
+    {
+      "codigo": "F1",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "F2",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "F3",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "G1",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "G2",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "G3",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "H1",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "H2",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "H3",
+      "estado": "comprada"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a807cca5aad36c22a20ca5"
+  },
+  "id_pelicula": {
+    "$oid": "66a80379a5aad36c22a20c8c"
+  },
+  "id_sala": {
+    "$oid": "66a8058ca5aad36c22a20ca2"
+  },
+  "fecha_init": {
+    "$date": "2024-08-03T20:45:00.000Z"
+  },
+  "fecha_end": {
+    "$date": "2024-08-03T23:00:00.000Z"
+  },
+  "asientos": [
+    {
+      "codigo": "J1",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "J2",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "J3",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "J4",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "J5",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "J6",
+      "estado": "disponible"
+    },
+    {
+      "codigo": "K1",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "K2",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "K3",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "K4",
+      "estado": "comprada"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a8080ba5aad36c22a20ca6"
+  },
+  "id_pelicula": {
+    "$oid": "66a80379a5aad36c22a20c82"
+  },
+  "id_sala": {
+    "$oid": "66a8058ca5aad36c22a20ca1"
+  },
+  "fecha_init": {
+    "$date": "2024-08-05T12:00:00.000Z"
+  },
+  "fecha_end": {
+    "$date": "2024-08-05T14:30:00.000Z"
+  },
+  "asientos": [
+    {
+      "codigo": "A1",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "A2",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "B1",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "B2",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "C1",
+      "estado": "disponible"
+    },
+    {
+      "codigo": "C2",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "D1",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "D2",
+      "estado": "comprada"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a8080ba5aad36c22a20ca7"
+  },
+  "id_pelicula": {
+    "$oid": "66a80379a5aad36c22a20c8f"
+  },
+  "id_sala": {
+    "$oid": "66a8058ca5aad36c22a20ca2"
+  },
+  "fecha_init": {
+    "$date": "2024-08-06T21:00:00.000Z"
+  },
+  "fecha_end": {
+    "$date": "2024-08-06T23:15:00.000Z"
+  },
+  "asientos": [
+    {
+      "codigo": "E1",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "E2",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "E3",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "F1",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "F2",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "G1",
+      "estado": "comprada"
+    },
+    {
+      "codigo": "G2",
+      "estado": "disponible"
+    },
+    {
+      "codigo": "H1",
+      "estado": "reservada"
+    },
+    {
+      "codigo": "H2",
+      "estado": "comprada"
+    }
+  ]
+}]

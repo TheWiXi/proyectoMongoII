@@ -1,0 +1,268 @@
+[{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c80"
+  },
+  "titulo": "Duna",
+  "genero": "Ciencia ficción",
+  "duracion": 155,
+  "sinopsis": "En un futuro lejano, Paul Atreides debe viajar al planeta más peligroso del universo para asegurar el futuro de su familia y su gente.",
+  "estado": "en cartelera",
+  "fecha": {
+    "$date": "2024-07-15T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c81"
+  },
+  "titulo": "Barbie",
+  "genero": "Comedia",
+  "duracion": 114,
+  "sinopsis": "Una muñeca que vive en 'Barbieland' es expulsada por no ser lo suficientemente perfecta y se embarca en una aventura en el mundo real.",
+  "estado": "proximamente",
+  "fecha": {
+    "$date": "2024-12-20T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c82"
+  },
+  "titulo": "Oppenheimer",
+  "genero": "Drama histórico",
+  "duracion": 180,
+  "sinopsis": "La historia del físico J. Robert Oppenheimer y su papel en el desarrollo de la bomba atómica.",
+  "estado": "en cartelera",
+  "fecha": {
+    "$date": "2024-07-22T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c83"
+  },
+  "titulo": "Misión Imposible: Sentencia Mortal - Parte Uno",
+  "genero": "Acción",
+  "duracion": 163,
+  "sinopsis": "Ethan Hunt y su equipo del FMI se embarcan en su misión más peligrosa hasta el momento: rastrear una nueva arma aterradora que amenaza a toda la humanidad.",
+  "estado": "descontinuada",
+  "fecha": {
+    "$date": "1972-03-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c84"
+  },
+  "titulo": "Elemental",
+  "genero": "Animación",
+  "duracion": 102,
+  "sinopsis": "En una ciudad donde conviven criaturas de fuego, agua, tierra y aire, una joven de fuego y un chico de agua descubren algo elemental: cuánto tienen en común.",
+  "estado": "estreno",
+  "fecha": {
+    "$date": "2024-07-20T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c85"
+  },
+  "titulo": "El Padrino",
+  "genero": "Drama criminal",
+  "duracion": 175,
+  "sinopsis": "La historia de la familia Corleone, una poderosa dinastía del crimen organizado en Nueva York.",
+  "estado": "en cartelera",
+  "fecha": {
+    "$date": "2024-07-22T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c86"
+  },
+  "titulo": "El Mago de Oz",
+  "genero": "Fantasía musical",
+  "duracion": 102,
+  "sinopsis": "Dorothy Gale es arrastrada por un tornado desde Kansas a la mágica Tierra de Oz, y emprende un viaje para encontrar al Mago y regresar a casa.",
+  "estado": "descontinuada",
+  "fecha": {
+    "$date": {
+      "$numberLong": "-957916800000"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c87"
+  },
+  "titulo": "Lo que el viento se llevó",
+  "genero": "Drama histórico",
+  "duracion": 238,
+  "sinopsis": "La historia de Scarlett O'Hara y su lucha por sobrevivir durante la Guerra Civil estadounidense y la Reconstrucción.",
+  "estado": "descontinuada",
+  "fecha": {
+    "$date": {
+      "$numberLong": "-948240000000"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c88"
+  },
+  "titulo": "Casablanca",
+  "genero": "Drama romántico",
+  "duracion": 102,
+  "sinopsis": "En Casablanca, durante la Segunda Guerra Mundial, Rick Blaine se reencuentra con su antiguo amor Ilsa Lund, quien ahora está casada con un líder de la resistencia.",
+  "estado": "descontinuada",
+  "fecha": {
+    "$date": {
+      "$numberLong": "-855187200000"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c89"
+  },
+  "titulo": "Ciudadano Kane",
+  "genero": "Drama",
+  "duracion": 119,
+  "sinopsis": "La vida del magnate de los medios Charles Foster Kane es examinada a través de los recuerdos de quienes lo conocieron.",
+  "estado": "descontinuada",
+  "fecha": {
+    "$date": {
+      "$numberLong": "-904780800000"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c8a"
+  },
+  "titulo": "El Conde",
+  "genero": "Comedia negra",
+  "duracion": 93,
+  "sinopsis": "Augusto Pinochet, el exdictador chileno, vive como un vampiro de 250 años, oculto en una mansión en ruinas.",
+  "estado": "estreno",
+  "fecha": {
+    "$date": "2024-07-29T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c8b"
+  },
+  "titulo": "Killers of the Flower Moon",
+  "genero": "Western",
+  "duracion": 206,
+  "sinopsis": "Miembros de la Nación Osage en los Estados Unidos son asesinados en circunstancias misteriosas, y el FBI investiga los crímenes.",
+  "estado": "estreno",
+  "fecha": {
+    "$date": "2024-07-27T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c8c"
+  },
+  "titulo": "Wonka",
+  "genero": "Fantasía musical",
+  "duracion": 117,
+  "sinopsis": "La historia del joven Willy Wonka y cómo llegó a convertirse en el excéntrico fabricante de chocolate.",
+  "estado": "en cartelera",
+  "fecha": {
+    "$date": "2024-07-20T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c8d"
+  },
+  "titulo": "The Killer",
+  "genero": "Thriller",
+  "duracion": 158,
+  "sinopsis": "Después de un fatídico error, un asesino se enfrenta a sus empleadores y a sí mismo en una persecución internacional.",
+  "estado": "estreno",
+  "fecha": {
+    "$date": "2024-07-25T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c8e"
+  },
+  "titulo": "Dune: Part Two",
+  "genero": "Ciencia ficción",
+  "duracion": 156,
+  "sinopsis": "Paul Atreides se une a Chani y los Fremen para vengarse de los conspiradores que destruyeron a su familia.",
+  "estado": "estreno",
+  "fecha": {
+    "$date": "2024-07-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c8f"
+  },
+  "titulo": "Aquaman and the Lost Kingdom",
+  "genero": "Acción",
+  "duracion": 120,
+  "sinopsis": "Aquaman debe forjar una alianza incómoda con un aliado improbable para proteger Atlantis y el mundo de una devastación irreversible.",
+  "estado": "en cartelera",
+  "fecha": {
+    "$date": "2024-07-20T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c90"
+  },
+  "titulo": "The Marvels",
+  "genero": "Acción",
+  "duracion": 130,
+  "sinopsis": "Carol Danvers, Kamala Khan y Monica Rambeau comienzan a intercambiar lugares cada vez que usan sus poderes y deben unirse para enfrentar una nueva amenaza.",
+  "estado": "proximamente",
+  "fecha": {
+    "$date": "2024-10-10T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c91"
+  },
+  "titulo": "Next Goal Wins",
+  "genero": "Comedia",
+  "duracion": 103,
+  "sinopsis": "El entrenador de fútbol americano Thomas Rongen es contratado para dirigir a la selección de fútbol de Samoa Americana, considerada el peor equipo del mundo.",
+  "estado": "proximamente",
+  "fecha": {
+    "$date": "2024-09-20T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c92"
+  },
+  "titulo": "The Hunger Games: The Ballad of Songbirds & Snakes",
+  "genero": "Ciencia ficción",
+  "duracion": 147,
+  "sinopsis": "Años antes de convertirse en el tiránico presidente de Panem, el joven Coriolanus Snow ve una oportunidad de cambiar su destino cuando es elegido como mentor de Lucy Gray Baird, la chica tributo del empobrecido Distrito 12.",
+  "estado": "proximamente",
+  "fecha": {
+    "$date": "2023-11-17T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a80379a5aad36c22a20c93"
+  },
+  "titulo": "Trolls Band Together",
+  "genero": "Animación",
+  "duracion": 90,
+  "sinopsis": "Cuando el hermano perdido de Branch es secuestrado, Poppy y Branch se embarcan en una emocionante y desgarradora misión para reunir a la familia Troll y rescatar a su hermano.",
+  "estado": "proximamente",
+  "fecha": {
+    "$date": "2024-12-14T00:00:00.000Z"
+  }
+}]
