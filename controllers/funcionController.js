@@ -5,7 +5,7 @@ const connection = new connect();
 
 export class funcionController {
     /**
-     * * NOTA: Clase para metodos respecto a peliculas
+     * * NOTA: Clase para metodos respecto a funciones (sala/horario/pelicula)
      */
     constructor(){
         this.connection = connection;
@@ -71,6 +71,21 @@ export class funcionController {
                 {projection: {"_id":0, "asientos": {"$elemMatch": {"estado": "disponible"}}}}
             ); // * Get the cursor
             console.table(cursor); // * Print the results
+            await this.connection.close(); // * Close the connection
+            return cursor; // * Return the results
+        } 
+        catch (error) {
+            // ! Handle errors
+            console.error("Error fetching data or closing connection:", error);
+        }
+    }
+    async apiTres (idFuncion,codAsiento){
+        try {
+            const cursor = await this.collection.updateOne(
+                {"_id": new ObjectId(idFuncion), "asientos.codigo": codAsiento},
+                { $set: { "asientos.$.estado": "reservado" } }
+            ); 
+            console.log("Asiento reservado con exito."); // * Print the results
             await this.connection.close(); // * Close the connection
             return cursor; // * Return the results
         } 
