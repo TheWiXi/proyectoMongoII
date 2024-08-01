@@ -1,12 +1,11 @@
-import {connect} from '../config/connect.js'
+import { connect } from '../config/connect.js'
+import { ObjectId } from 'mongodb';
 
 const connection = new connect();
 
 export class peliculaController {
     /**
      * * NOTA: Clase para metodos respecto a peliculas
-     * @param {connection} connect conexion ya establecida.
-     * @param {object} db Obtencion de la base de datos.
      */
     constructor(){
         this.connection = connection;
@@ -14,7 +13,7 @@ export class peliculaController {
     }
     /**
      * * NOTA:Permitir la consulta de todas las películas disponibles en el catálogo, con detalles como título, género y duración .
-     * @returns Peliculas disponibles(titulo, genero, duracion )
+     * @returns Peliculas disponibles o en cartelera(titulo, genero, duracion )
      */
     async apiUno (){
         try {
@@ -42,7 +41,6 @@ export class peliculaController {
                 { "_id": new ObjectId(idPelicula) }
             ); // * Get the cursor
             console.log(cursor); // * Print the results
-            await this.connection.close(); // * Close the connection
             return cursor; // * Return the results
         } 
         catch (error) {
