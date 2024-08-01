@@ -49,9 +49,51 @@ export class usuarioController {
             else {
                 console.log("Error: Rol no válido");
             }
+            await this.connection.close(); // * Close the connection
         } 
         catch (error) {
             console.error('Error inserting usuario:', error);
         }
     }
+    /**
+     * *NOTA: Lista todos los usuarios
+     * @returns Todos los usuarios
+     */
+    async apiDos(){
+        try {
+            const cursor = await this.collection.find(); // * Get the cursor
+            const result = await cursor.toArray(); // * Convert the cursor to an array
+            console.table(result); // * Print the results
+            await this.connection.close(); // * Close the connection
+            return result; // * Return the results
+        } 
+        catch (error) {
+            // ! Handle errors
+            console.error("Error fetching data or closing connection:", error);
+        }
+    }
+    /**
+     * *NOTA: Listar usuarios de un mismo rol
+     * @param {String} rol - rol (user,vip o admin)
+     * @returns usuarios con ese rol
+     */
+    async apiTres(rol){
+        if (user.rol === "user" || user.rol === "vip" || user.rol === "admin" ){
+            try {
+                const cursor = await this.collection.find({"rol": rol}); // * Get the cursor
+                const result = await cursor.toArray(); // * Convert the cursor to an array
+                console.table(result); // * Print the results
+                await this.connection.close(); // * Close the connection
+                return result; // * Return the results
+            } 
+            catch (error) {
+                // ! Handle errors
+                console.error("Error fetching data or closing connection:", error);
+            }
+        }
+        else {
+            console.log("Error: Rol no válido");
+        }
+    }
 }
+
