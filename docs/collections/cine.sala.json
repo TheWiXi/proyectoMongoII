@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "66a8058ca5aad36c22a20c9e"
+  },
+  "nombre": "Sala 1",
+  "tipo_Sala": "2D",
+  "filaVip": "A",
+  "asientos": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a8058ca5aad36c22a20c9f"
+  },
+  "nombre": "Sala Premium",
+  "tipo_Sala": "3D",
+  "filaVip": "F",
+  "asientos": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a8058ca5aad36c22a20ca0"
+  },
+  "nombre": "Sala IMAX",
+  "tipo_Sala": "IMAX",
+  "filaVip": "J",
+  "asientos": [
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "J5",
+    "J6",
+    "J7",
+    "J8",
+    "J9",
+    "J10"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a8058ca5aad36c22a20ca1"
+  },
+  "nombre": "Sala 4DX",
+  "tipo_Sala": "4DX",
+  "filaVip": "H",
+  "asientos": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66a8058ca5aad36c22a20ca2"
+  },
+  "nombre": "Sala 2",
+  "tipo_Sala": "2D",
+  "filaVip": "C",
+  "asientos": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "D1",
+    "D2"
+  ]
+}]

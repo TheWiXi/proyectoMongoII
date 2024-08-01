@@ -1,0 +1,44 @@
+[{
+  "_id": 1234567890,
+  "Nombre": "Juan Perez Gomez",
+  "Nick": "juanpg",
+  "contrasenia": 1234567890,
+  "email": "juanpg@example.com",
+  "telefono": "3125551212"
+},
+{
+  "_id": 987654321,
+  "Nombre": "Ana María López",
+  "Nick": "anita22",
+  "contrasenia": 987654321,
+  "email": "anita22@example.com",
+  "telefono": "3216549870",
+  "tarjeta": {
+    "fechaVencimiento": {
+      "$date": "2025-06-15T00:00:00.000Z"
+    },
+    "estado": "activa"
+  }
+},
+{
+  "_id": 1234,
+  "Nombre": "Admin",
+  "Nick": "Admin",
+  "contrasenia": 1234,
+  "email": "admin@gmail.com",
+  "telefono": "3222352673"
+},
+{
+  "_id": 1021513601,
+  "Nombre": "Juan David",
+  "Nick": "JDRO",
+  "contrasenia": 1021513601,
+  "email": "prueba@gmail.com",
+  "telefono": "3222352673",
+  "tarjeta": {
+    "fechaVencimiento": {
+      "$date": "2024-07-31T06:07:17.735Z"
+    },
+    "estado": "inactiva"
+  }
+}]
