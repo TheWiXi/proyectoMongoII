@@ -60,7 +60,7 @@ export class funcionController {
         }
     }
     /**
-     * 
+     * * NOTA: mostrar asientos disponibles de una funcion
      * @param {String} idFuncion Id de la funcion a consultar, ej:66a807cca5aad36c22a20ca3 
      * @returns asientos disponibles de la funcion
      */
@@ -79,11 +79,38 @@ export class funcionController {
             console.error("Error fetching data or closing connection:", error);
         }
     }
+    /**
+     * * NOTA: reservar asientos
+     * @param {string} idFuncion - id de la funcion a reservar
+     * @param {string} codAsiento - codigo del asiento a reservar
+     * @returns mensaje confirmacion de reserva
+     */
     async apiTres (idFuncion,codAsiento){
         try {
             const cursor = await this.collection.updateOne(
-                {"_id": new ObjectId(idFuncion), "asientos.codigo": codAsiento},
+                {"_id": new ObjectId(idFuncion), "asientos.codigo": codAsiento, "asientos.estado": "disponible"},
                 { $set: { "asientos.$.estado": "reservado" } }
+            ); 
+            console.log("Asiento reservado con exito."); // * Print the results
+            await this.connection.close(); // * Close the connection
+            return cursor; // * Return the results
+        } 
+        catch (error) {
+            // ! Handle errors
+            console.error("Error fetching data or closing connection:", error);
+        }
+    }
+    /**
+     * *NOTA: Cancelacion de reservas
+     * @param {string} idFuncion - id de la funcion 
+     * @param {string} codAsiento - codigo del asiento 
+     * @returns mensaje cancelacion de reserva
+     */
+    async apiCuatro (idFuncion,codAsiento){
+        try {
+            const cursor = await this.collection.updateOne(
+                {"_id": new ObjectId(idFuncion), "asientos.codigo": codAsiento, "asientos.estado": "reservado"},
+                { $set: { "asientos.$.estado": "disponible" } }
             ); 
             console.log("Asiento reservado con exito."); // * Print the results
             await this.connection.close(); // * Close the connection
