@@ -63,3 +63,73 @@ const newboleto = boletos.apiUno(newTicket);
 
 Respuesta:
 ![image-20240731122905583](https://github.com/TheWiXi/proyectoMongoII/blob/main/docs/5.png)
+
+5. **API para Reservar Asientos:** Permitir la selección y reserva de asientos para una proyección específica.
+
+   ```js
+   const funcion = new funcionController();
+   const idFuncion = "66a807cca5aad36c22a20ca3";
+   const codAsiento = "A1";
+   const newReserva = funcion.apiTres(idFuncion,codAsiento);
+   ```
+
+6.**API para Cancelar Reserva de Asientos:** Permitir la cancelación de una reserva de asiento ya realizada.
+
+```js
+const funcion = new funcionController();
+const idFuncion = "66a807cca5aad36c22a20ca3";
+const codAsiento = "A1";
+const newReserva = funcion.apiCuatro(idFuncion,codAsiento);
+```
+
+7.**API para Crear Usuario:** Permitir la creación de nuevos usuarios en el sistema, asignando roles y privilegios específicos (usuario estándar, usuario VIP o administrador).
+
+```js
+const users = new usuarioController();
+const user = "prueba";
+const pass = "prueba123";
+const rol = "admin";
+const newUser = await users.apiUno(user,pass,rol);
+```
+
+Respuesta
+
+![image-20240801092227255](/home/wixi/.config/Typora/typora-user-images/image-20240801092227255.png)
+
+### Roles
+
+![image-20240801092448741](/home/wixi/.config/Typora/typora-user-images/image-20240801092448741.png)
+
+```js
+const users = new usuarioController();
+const user = {
+    _id: 98765432121,
+    Nombre: "user prueba1",
+    Nick: "prueba11",
+    contrasenia: "prueba1231", 
+    email: "prueba@example.com",
+    telefono: "3216549870",
+    rol: "vip",
+    tarjeta: {
+        fechaVencimiento: new Date("2025-06-15T00:00:00.000+00:00"),
+        estado: "activa"
+    }
+};
+const newUser = await users.apiUno(user);
+
+```
+
+8.**API para Obtener Detalles de Usuario:** Permitir la consulta de información detallada sobre un usuario, incluyendo su rol y estado de tarjeta VIP.
+
+```js
+const showUsers = new usuarioController().apiDos();
+```
+
+9.**API para Listar Usuarios:** Permitir la consulta de todos los usuarios del sistema, con la posibilidad de filtrar por rol (VIP, estándar o administrador).
+
+```js
+const rol = "vip";
+
+const showUsers = new usuarioController().apiTres(rol);
+```
+
