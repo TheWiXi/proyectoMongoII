@@ -95,5 +95,41 @@ export class usuarioController {
             console.log("Error: Rol no válido");
         }
     }
+    /**
+     * *NOTA: editar rol del usuario
+     * @param {int} idUser - id usuario
+     * @param {String} newRol - nuevo rol del usuario 
+     * @returns msj usuario actualizado
+     */
+    async apiCuatro (idUser,newRol){
+        try {
+            if (newRol === "user" || newRol === "vip" || newRol === "admin" ){
+            const cursor = await this.collection.findOneAndUpdate(
+                {"_id": new ObjectId(idUser)},
+                { $set: { "rol": newRol} },
+                { returnDocument: "after" }
+            ); 
+            const nick = cursor.value.Nick;
+            const resetrol = await this.db.command({
+                updateUser: nick,
+                roles: [], // Establece un array vacío para eliminar todos los roles
+            });    
+            const addNewRol = await db.command({
+                updateUser: nick,
+                roles: [{ role: newRol, db: "Cine" }], // Asegúrate de especificar la base de datos
+            });
+            console.log("Usuario (rol) actualizado.")
+            await this.connection.close(); // * Close the connection
+            return addNewRol;
+            }
+            else {
+                console.log("Error: Rol no válido");
+            }
+        } 
+        catch (error) {
+            // ! Handle errors
+            console.error("Error fetching data or closing connection:", error);
+        }
+    }
 }
 

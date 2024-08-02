@@ -5,3 +5,6 @@ import { boletoController } from "./controllers/boletosController.js";
 import { ObjectId } from 'mongodb';
 import { usuarioController } from "./controllers/usersController.js";
 
+const newRol = "user";
+const idUser = 9876543212;
+const showUsers = new usuarioController().apiCuatro(idUser,newRol);
